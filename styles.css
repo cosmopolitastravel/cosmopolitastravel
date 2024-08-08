@@ -1,0 +1,149 @@
+/* Estilos personalizados */
+
+/* google fonts */ 
+
+/* Paleta de colores */
+:root {
+    --dark-blue: #1b263b;
+    --medium-blue: #3b5998;
+    --light-blue: #8ab6d6;
+    --lighter-blue: #d4e6f1;
+    --transparent: #000;
+}
+
+body {
+    background-color: whitesmoke;
+    padding: 0px;
+}
+
+footer {
+    padding-top: 15px;
+    background-color: #0ab6f7;
+    overflow: hidden;
+}
+
+
+nav {
+    background-color: #0ab6f7;
+    font-family: Quicksand;
+}
+
+header {
+    padding-bottom: 35px;
+}
+
+h1 {
+    font-family: "playwrite AR", cursive;
+}
+
+p {
+    text-align: justify;
+}
+
+/* overlay */
+
+.row {
+    padding-top: 5px;
+    font-family: "Playwrite AR", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.card {
+    transition-duration: 2s;
+    transition-delay: 1;
+    opacity: 1;
+}
+
+.card-title{
+    color: black;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-text {
+    transform: translateY(35px);
+}
+
+.card:hover img{
+    transition: transform 1s ease;
+    transform: scale(1.05); /* Escala la imagen al pasar el cursor */
+    opacity: 0.8;
+}
+
+.card:hover .card-text{
+    transition: transform 1s ease;
+    display: block;
+    opacity: 1;
+    transform: translateY(0px);
+    color: black;
+}
+
+.logo {
+    height: 50px;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+    object-position: 60% 40%;
+}
+
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+/* menú */  
+
+/* Añade el CSS para el efecto hover en los enlaces del menú */
+.nav-link {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 1s;
+    position: absolute;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.list-group-item {
+    border-radius: 10px;
+}

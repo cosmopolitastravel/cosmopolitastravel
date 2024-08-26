@@ -53,7 +53,7 @@ p {
 }
 
 .card img{
-    opacity: 0.9;
+    opacity: 1;
 }
 .card-title{
     color: black;
@@ -80,7 +80,6 @@ p {
 .card:hover .card-text{
     transition: transform 1s ease;
     display: block;
-    opacity: 0.8;
     transform: translateY(0px);
     color: black;
 }

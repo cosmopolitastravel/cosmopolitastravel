@@ -50,9 +50,11 @@ p {
 .card {
     transition-duration: 2s;
     transition-delay: 1;
-    opacity: 0.8;
 }
 
+.card img{
+    opacity: 0.8;
+}
 .card-title{
     color: black;
 }
@@ -78,7 +80,7 @@ p {
 .card:hover .card-text{
     transition: transform 1s ease;
     display: block;
-    opacity: 1;
+    opacity: 0.6;
     transform: translateY(0px);
     color: black;
 }

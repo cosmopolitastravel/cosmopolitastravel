@@ -150,7 +150,7 @@ p {
 
 .fondo {
     background-color: #f0f0f0; /* Color de fondo */
-    padding: 10px; /* Espacio interno alrededor del texto */
+    padding: 2px; /* Espacio interno alrededor del texto */
     display: inline-block; /* Ajustar el ancho del fondo al texto */
     border-radius: 5px; /* Bordes redondeados */
 }

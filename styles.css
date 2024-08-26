@@ -50,11 +50,13 @@ p {
 .card {
     transition-duration: 2s;
     transition-delay: 1;
+    opacity: 1;
 }
 
 .card img{
     opacity: 1;
 }
+
 .card-title{
     color: black;
 }

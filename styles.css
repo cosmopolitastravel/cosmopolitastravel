@@ -20,7 +20,7 @@ footer {
 
 nav {
     background-color: #0ab6f7;
-    font-family: Quicksand;
+    font-family: "Quicksand";
 }
 
 header {
@@ -28,7 +28,7 @@ header {
 }
 
 titulo {
-    font-family: Quicksand;
+    font-family: "Quicksand";
 }
 
 h4 {

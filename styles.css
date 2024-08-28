@@ -106,6 +106,12 @@ p {
     object-position: 60% 40%;
 }
 
+.card-img {
+    height: 100px;
+    object-position: 60% 40%;
+
+}
+
 
 .menu-toggle {
     display: none;

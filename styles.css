@@ -23,6 +23,10 @@ nav {
     font-family: "Quicksand";
 }
 
+navbar-brand {
+    font-family: "Unna";
+}
+
 header {
     padding-bottom: 35px;
 }
@@ -93,7 +97,6 @@ p {
 
 .logo {
     height: 50px;
-    font-family: "unna";
 }
 
 .card {

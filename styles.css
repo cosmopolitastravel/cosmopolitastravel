@@ -133,7 +133,7 @@ p {
     .navbar-nav {
         flex-direction: column;
     }
-    .logo {
+    .contenedor-menu {
         justify-content: center;
     }
 }

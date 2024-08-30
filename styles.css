@@ -133,6 +133,9 @@ p {
     .navbar-nav {
         flex-direction: column;
     }
+    .navbar-brand {
+        justify-content: center;
+    }
 }
 
 /* menú */  

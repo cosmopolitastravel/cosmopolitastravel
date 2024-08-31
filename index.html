@@ -112,6 +112,27 @@
             </ul>
             </div>
     </footer>
+    <script type="text/javascript">
+    // Función para centrar el logo en pantallas móviles
+function toggleLogoPosition() {
+    const containerMenu = document.querySelector('.contenedor-menu');
+
+    // Comprueba si el ancho de la ventana es menor que 768px
+    if (window.innerWidth < 768) {
+        containerMenu.classList.add('logo'); // Añade la clase para centrar el logo
+    } else {
+        containerMenu.classList.remove('logo'); // Elimina la clase para pantallas más grandes
+    }
+}
+
+// Ejecuta la función al cargar la página
+window.addEventListener('load', toggleLogoPosition);
+
+// Ejecuta la función cuando la ventana se redimensiona
+window.addEventListener('resize', toggleLogoPosition);
+
+</script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

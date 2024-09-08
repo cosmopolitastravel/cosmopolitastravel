@@ -172,3 +172,37 @@ p {
     display: inline-block; /* Ajustar el ancho del fondo al texto */
     border-radius: 10px; /* Bordes redondeados */
 }
+
+/* carousel fotos */
+
+.carousel-wrapper {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-inner {
+            display: flex;
+            width: 100%;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            white-space: nowrap;
+        }
+
+        .carousel-item {
+            display: inline-block;
+            width: 40%; /* Ajusta este porcentaje para mostrar más o menos imágenes */
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: auto; /* Mantiene la relación de aspecto original */
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 5%;
+        }
+
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5); /* Asegura que los iconos sean visibles */
+        }

@@ -10,44 +10,62 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <style>
   /* Make the image fully responsive */
-  .carousel-inner img {
+.carousel-inner img {
     width: 100%;
     height: 100%;
-  }
+    justify-content: center;
+}
+
+.carousel-indicators img{
+    width: 120px;
+    display: block;
+}
+
+.carousel-indicators li{
+    width: max-content!important;
+}
+
+.carousel-indicators{
+    position: unset;
+}
+
+.carousel-indicators li.active img{
+    border: 2px solid blue;
+}
   </style>
 </head>
 <body>
 <section>
-<div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="fotos/partenon.webp" alt="Los Angeles" width="1100" height="500">
+    <div class="container mt-5">
+        <div class="row">     
+            <div id="partenon" class="carousel slide container col-md-6 mb-4" data-ride="carousel">
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="fotos/partenon.webp" alt="Los Angeles" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="fotos/praga.png" alt="Chicago" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="fotos/planning.png" alt="New York" width="1100" height="500">
+                    </div>
+                    <a class="carousel-control-prev" href="#partenon" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#partenon" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#partenon" data-slide-to="0" class="active"><img src="fotos/partenon.webp"></li>
+                    <li data-target="#partenon" data-slide-to="1"><img src="fotos/praga.png"></li>
+                    <li data-target="#partenon" data-slide-to="2"><img src="fotos/planning.png"></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="fotos/partenon.webp" alt="Chicago" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="fotos/partenon.webp" alt="New York" width="1100" height="500">
-    </div>
-  </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
 </section>
 </body>
 </html>

@@ -175,34 +175,25 @@ p {
 
 /* carousel fotos */
 
-.carousel-wrapper {
-            overflow: hidden;
-            position: relative;
-        }
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
 
-        .carousel-inner {
-            display: flex;
-            width: 100%;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-            white-space: nowrap;
-        }
+.carousel-indicators img{
+    width: 120px;
+    display: block;
+}
 
-        .carousel-item {
-            display: inline-block;
-            width: 40%; /* Ajusta este porcentaje para mostrar más o menos imágenes */
-        }
+.carousel-indicators li{
+    width: max-content!important;
+}
 
-        .carousel-item img {
-            width: 100%;
-            height: auto; /* Mantiene la relación de aspecto original */
-        }
+.carousel-indicators{
+    position: unset;
+}
 
-        .carousel-control-prev, .carousel-control-next {
-            background-color: rgba(0, 0, 0, 0.5);
-            width: 5%;
-        }
-
-        .carousel-control-prev-icon, .carousel-control-next-icon {
-            background-color: rgba(0, 0, 0, 0.5); /* Asegura que los iconos sean visibles */
-        }
+.carousel-indicators li.active img{
+    border: 2px solid blue;
+}

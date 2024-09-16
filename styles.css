@@ -186,6 +186,7 @@ p {
 
 .carousel-indicators img{
     width: 120px;
+    height: 80px;
     display: block;
 }
 

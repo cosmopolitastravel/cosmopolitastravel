@@ -15,6 +15,9 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
@@ -52,37 +55,50 @@
     <section>
     <div class="container py-5">
         <div class="row">
-            <div class="col-md-8">
-                <h1 class="text-center py-5">Atenas</h1>
-                <p class="text-muted text-center">Publicado el 28 de agosto de 2024</p>
+            <div class="col-md-10">
+                <h1 class="py-5 text-center">Atenas</h1>
+                <p class="text-muted">Publicado el 28 de agosto de 2024</p>
         
                 <p>Nuestra primera publicación, aquí encontraréis información interesante y nuestras experiencias en la ciudad de Atenas, y en Delfos, la visita obligada del oráculo, continua leyendo, para saber más sobre la cultura, la gastronomía y la vida en Atenas.</p>
 
                 <p>A nosotros nos encanta pasear, hacer visitas culturales, comer, beber cerveza y conocer nuestro entorno sigue adelante para ver lo que te puede deparar esta maravillosa ciudad.</p>
             </div>
-            <div class="col-md-8">
-                <p>Contenido del artículo</p>
+                <!-- Índice del artículo -->
+        <div class="aside">
+            <h3><Strong>Contenido</Strong></h3>
+            <ul class="list-unstyled">
+                <li><a href="#partenonart">1. Partenón</a></li>
+                <li><a href="#acropolisart">2. Acrópolis</a></li>
+                <li><a href="#museoart">3. Museo del Acrópolis</a></li>
+                <li><a href="#agoraart">4. Ágora</a></li>
+                <li><a href="#biblioteca">5. Biblioteca de Adriano</a></li>
+                <li><a href="#areopagoart">6. Areópago</a></li>
+                <li><a href="#zeusart">7. Templo de Zeus</a></li>
+                <li><a href="#licabetoart">8. Monte Licabeto</a></li>
+                <li><a href="#delfosart">9.Oráculo de Delfos</a></li>
+            </ul>
+        </div>
         </div>
     </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <img src="fotos/atenas/partenon.webp" class="img-fluid mb-4 img-thumbnail" alt="Partenón" width="750" height="250">
                 </div>
             </div>
         </div>
     <div class="container py-3">
         <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-center py-2">Visitas</h2>
+            <div class="col-md-10">
+                <h2 class="py-2 text-center">Visitas</h2>
 
-                <h3 class="text-center py-2">Partenón</h3>
+                <h3 class="py-2 text-center" id="partenonart">Partenón</h3>
 
                 <p>El templo del Partenón, es el templo de Atenea Partenón, dedicado a la diosa griega que le da el nombre, que cómo podéis imaginar le da el nombre también a la ciudad y a la que parece que tienen cómo diosa favorita en la zona.</p>
 
                 <p>El Partenón es uno de los monumentos más icónicos de la antigua Grecia y un símbolo destacado de la civilización griega clásica. Este templo, dedicado a la diosa Atenea, está situado en la Acrópolis de Atenas y fue construido durante el apogeo de la Atenas de Pericles en el siglo V a.C., entre los años 447 y 432 a.C.</p>
 
-                <h4 class="text-center py-2">Importancia Cultural e Histórica</h4>
+                <h4 class="py-2">Importancia Cultural e Histórica</h4>
 
                 <p>El Partenón no solo fue un templo religioso, sino también un símbolo de la democracia ateniense y de la prosperidad cultural de Atenas durante la llamada "Edad de Oro" de Pericles. Representa la victoria de los griegos sobre los persas y el florecimiento del arte, la filosofía y las ciencias en Atenas.</p>
 
@@ -90,7 +106,7 @@
 <section>
     <div class="container py-5">
         <div class="row">     
-            <div id="partenon" class="carousel slide container col-md-6 mb-4" data-ride="carousel">
+            <div id="partenon" class="carousel slide container col-md-10 mb-4" data-ride="carousel">
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -135,7 +151,7 @@
         </div>
     </div>
 </section>
-                <h4 class="text-center py-3">Mitología</h4>
+                <h4 class="py-3 text-center">Mitología</h4>
 
                 <p>Atenea era una de las muchas divinidades de la mitología griega, en este caso diosa de la guerra, la devoción de los guerreros, conocida por muchos aspectos o valores, como por ejemplo, la virgnidad, la inteligencia, y las artes manuales. </p>
 
@@ -167,13 +183,13 @@
 
                 <p>Dionisio: Dios del vino, el teatro y el éxtasis. Dionisio es conocido por sus festivales y el desenfreno asociado a su culto.</p>
 
-                <h3 class="text-center py-3">Acrópolis</h3>
+                <h3 class="text-center py-3" id="acropolisart">Acrópolis</h3>
 
                 <p>La Acrópolis es una de las estructuras más emblemáticas de la civilización griega antigua, ubicada en el corazón de Atenas, Grecia. Es una colina rocosa que se eleva aproximadamente 150 metros sobre el nivel del mar y alberga varios de los monumentos más importantes de la antigüedad clásica, construidos bajo la dirección de Pericles en el siglo V a.C. durante el auge del Imperio ateniense.</p>
 <section>
     <div class="container py-5">
         <div class="row">     
-            <div id="acropolis" class="carousel slide container col-md-6 mb-4" data-ride="carousel">
+            <div id="acropolis" class="carousel slide container col-md-10 mb-4" data-ride="carousel">
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -244,11 +260,11 @@
 
                 <p>Patrimonio de la Humanidad: En 1987, la Acrópolis fue designada como Patrimonio de la Humanidad por la UNESCO debido a su importancia cultural e histórica. Es una de las atracciones turísticas más visitadas del mundo y un símbolo perdurable de la civilización occidental.</p>
 
-                <h3 class="text-center py-3">Museo del acrópolis</h3>
+                <h3 class="text-center py-3" id="museoart">Museo del acrópolis</h3>
 <section>
     <div class="container py-5">
         <div class="row">     
-            <div id="museo" class="carousel slide container col-md-6 mb-4" data-ride="carousel">
+            <div id="museo" class="carousel slide container col-md-10 mb-4" data-ride="carousel">
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -296,7 +312,7 @@
                 <p>El Museo de la Acrópolis es uno de los museos más importantes de Grecia y del mundo, dedicado a la conservación y exhibición de los objetos encontrados en la Acrópolis de Atenas, el conjunto monumental más significativo de la antigua Grecia. Inaugurado en 2009, el museo ofrece una experiencia única que combina la arquitectura moderna con la riqueza histórica de una de las civilizaciones más influyentes del mundo.</p>
                 <p>El museo se encuentra justo al lado del acrópolis, muy cerca del partenón, a apenas 20 metros de una de las entradas principales para la visita del acrópolis, al igual que las anteriores visitas, se encuentran en el centro de la ciudad, tanto de la ciudad moderna como de la antigua, puesto que muchas ruinas se encuentra en la misma localización.</p>
 
-                <h3 class="text-center py-3">Ágora Romana y Ágora antigua</h3>
+                <h3 class="text-center py-3" id="agoraart">Ágora Romana y Ágora antigua</h3>
 
                 <p>En Atenas, existen dos importantes Ágoras que fueron centros vitales de la vida pública en diferentes periodos históricos: la Ágora Antigua (o Ágora Clásica) y la Ágora Romana. Ambas son espacios arqueológicos significativos, cada uno representando diferentes etapas de la historia de Atenas y mostrando la evolución de la ciudad desde la época clásica hasta la era romana.</p>
 
@@ -342,7 +358,7 @@
 <section>
     <div class="container py-5">
         <div class="row">     
-            <div id="agora" class="carousel slide container col-md-6 mb-4" data-ride="carousel">
+            <div id="agora" class="carousel slide container col-md-10 mb-4" data-ride="carousel">
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -387,7 +403,7 @@
         </div>
     </div>
 </section>
-                <h3 class="text-center py-3">Biblioteca de Adriano</h3>
+                <h3 class="text-center py-3" id="biblioteca">Biblioteca de Adriano</h3>
 
                 <p>La Biblioteca de Adriano es uno de los monumentos históricos más importantes de Atenas, ubicado cerca de la plaza Monastiraki, en el corazón del casco antiguo de la ciudad. Fue construida en el siglo II d.C. por el emperador romano Adriano, un gran admirador de la cultura griega, como parte de su esfuerzo por embellecer Atenas y convertirla en una ciudad digna del esplendor cultural de Roma.</p>
 
@@ -397,7 +413,7 @@
 <section>
     <div class="container py-5">
         <div class="row">     
-            <div id="adriano" class="carousel slide container col-md-6 mb-4" data-ride="carousel">
+            <div id="adriano" class="carousel slide container col-md-10 mb-4" data-ride="carousel">
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -443,13 +459,13 @@
     </div>
 </section>
 
-                <h3 class="text-center py-3">Areópago</h3>
+                <h3 class="text-center py-3" id="areopagoart">Areópago</h3>
 
                 <p>El nombre "Areópago" se deriva del dios griego Ares (Marte en la mitología romana), el dios de la guerra. Según la leyenda, Ares fue juzgado en esta colina por el asesinato de Halirrotio, el hijo de Poseidón, después de que Halirrotio intentara violar a Alcipe, la hija de Ares. Por esta razón, el lugar adquirió el nombre de "Colina de Ares".</p>
 <section>
     <div class="container py-5">
         <div class="row">     
-            <div id="areopago" class="carousel slide container col-md-6 mb-4" data-ride="carousel">
+            <div id="areopago" class="carousel slide container col-md-10 mb-4" data-ride="carousel">
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -486,13 +502,13 @@
 
                 <p>Además, el Areópago es mencionado en el Nuevo Testamento de la Biblia, en el Libro de los Hechos (17:19-34), como el lugar donde el apóstol Pablo pronunció su famoso discurso a los atenienses sobre el "Dios desconocido", predicando el cristianismo a los ciudadanos de Atenas.</p>
 
-                <h3 class="text-center py-3">Arco de Adriano y templo de Zeus</h3>
+                <h3 class="text-center py-3" id="zeusart">Arco de Adriano y templo de Zeus</h3>
 
                 <p>El Arco de Adriano y el Templo de Zeus Olímpico (también conocido como el Olimpeion) son dos de los monumentos más emblemáticos de la antigua Atenas, ambos vinculados con la figura del emperador romano Adriano, quien gobernó entre 117 y 138 d.C. Estos monumentos destacan por su impresionante arquitectura y por ser símbolos de la era dorada del Imperio Romano en Grecia.</p>
 <section>
     <div class="container py-5">
         <div class="row">     
-            <div id="zeus" class="carousel slide container col-md-6 mb-4" data-ride="carousel">
+            <div id="zeus" class="carousel slide container col-md-10 mb-4" data-ride="carousel">
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -531,13 +547,13 @@
 </section>
                 <p>El Arco de Adriano es un monumento ceremonial que se encuentra en el centro de Atenas, justo en la avenida que conecta el centro histórico con el barrio de Pangrati. Este arco fue construido en el año 131 d.C. en honor al emperador Adriano, quien era conocido por su filantropía y su amor por la cultura griega.</p>
             
-                <h3 class="text-center py-3">Monte Licabeto</h3>
+                <h3 class="py-3 text-center" id="licabetoart">Monte Licabeto</h3>
 
                 <p>El Monte Licabeto (también conocido como Lycabettus o Likavitos) es una de las colinas más altas y prominentes de Atenas, Grecia. Con una altura de aproximadamente 277 metros sobre el nivel del mar, el monte Licabeto ofrece unas vistas panorámicas impresionantes de la ciudad de Atenas, la Acrópolis, el mar Egeo y las montañas circundantes.</p>
 <section>
     <div class="container py-5">
         <div class="row">     
-            <div id="licabeto" class="carousel slide container col-md-6 mb-4" data-ride="carousel">
+            <div id="licabeto" class="carousel slide container col-md-10 mb-4" data-ride="carousel">
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -582,7 +598,7 @@
 
                 <p>Desde la cima del Licabeto, los visitantes pueden disfrutar de una vista de 360 grados de Atenas. En días despejados, es posible ver hasta el mar Egeo y las islas cercanas, como Salamina. La colina ofrece una perspectiva única de la Acrópolis, que se eleva desde el centro de la ciudad, así como de otros puntos de referencia como el Templo de Zeus Olímpico y el Estadio Panathinaikó.</p>
 
-                <h3 class="text-center py-3">Barrios de Plaka y Monastiraki</h3>
+                <h3 class="text-center py-3" id="barriosart">Barrios de Plaka y Monastiraki</h3>
 
                 <p>Los barrios de Plaka y Monastiraki son dos de los vecindarios más antiguos y vibrantes de Atenas, Grecia. Ambos se encuentran en el corazón de la ciudad, justo al pie de la Acrópolis, y son conocidos por su atmósfera histórica, sus estrechas calles adoquinadas, sus tiendas de souvenirs, y su animada vida callejera.</p>
 <section>
@@ -623,7 +639,7 @@
 </section>
                 <p>Ambos barrios son muy peculiares, estan en el centro de Atenas, muy proximos a las ruinas arqueológicas, el barrio tiene una arquitectura neoclásica distintiva, con casas de techos rojos, balcones de hierro forjado y calles estrechas llenas de buganvillas y plantas trepadoras.</p>
 
-                <h3 class="text-center py-3">Oráculo de Delfos</h3>
+                <h3 class="py-3 text-center" id="delfosart">Oráculo de Delfos</h3>
 
                 <p>El Oráculo de Delfos es uno de los sitios más famosos de la antigua Grecia, conocido por su importancia religiosa, cultural y política. Situado en el monte Parnaso, cerca de la ciudad de Delfos, el oráculo fue un centro de consulta y adivinación muy influyente desde la antigüedad clásica hasta la época romana.</p>
 
@@ -631,7 +647,7 @@
 <section>
     <div class="container py-5">
         <div class="row">     
-            <div id="delfos" class="carousel slide container col-md-6 mb-4" data-ride="carousel">
+            <div id="delfos" class="carousel slide container col-md-10 mb-4" data-ride="carousel">
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -694,7 +710,7 @@
 <section>
     <div class="container py-5">
         <div class="row">     
-            <div class="col-md-12">
+            <div class="col-md-10">
                 <p>El Oráculo de Delfos era conocido por sus profecías y predicciones, que se consideraban mensajes directos de los dioses. Las respuestas del oráculo eran buscadas por individuos y estados griegos sobre una amplia gama de cuestiones, desde decisiones personales hasta estrategias de guerra y asuntos políticos.</p>
 
                 <p>La sacerdotisa del oráculo, conocida como la Pitia (o Pythia), era la encargada de transmitir los mensajes de Apolo. Ella se sentaba en un trípode sobre una abertura en el suelo que emanaba vapores, y sus profecías eran interpretadas por sacerdotes entrenados. Se decía que la Pitia entraba en un estado de trance inducido por estos vapores.</p>
@@ -708,7 +724,7 @@
         </div>
     </div>
     </section>
-    <footer class="text-center text-lg-start">
+    <footer class="text-center text-lg-start w-100 mx-auto">
         <div class="row">
             <div class="col-md-12 mb-6">
                 <h6>Síguenos en Redes Sociales</h6>
@@ -717,10 +733,18 @@
                 <li><a href="https://www.Instagram.com/cosmopolitas.travel" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i>Instagram</a></li>
             </ul>
             </div>
-        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Función para manejar el progreso de lectura
+        window.onscroll = function() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        };
+    </script>
 </body>
 </html>

@@ -177,27 +177,69 @@ p {
 }
 
 /* carousel fotos */
-
 .carousel-inner img {
     width: 100%;
     height: 100%;
     justify-content: center;
 }
-
 .carousel-indicators img{
     width: 120px;
     height: 80px;
     display: block;
 }
-
 .carousel-indicators li{
     width: max-content!important;
 }
-
 .carousel-indicators{
     position: unset;
 }
-
 .carousel-indicators li.active img{
     border: 2px solid blue;
+}
+/* Carousel styles */
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área del carrusel */
+    border-radius: 10px; /* Bordes redondeados en las imágenes */
+    transition: transform 0.5s ease; /* Transición suave para efectos */
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.carousel-indicators li {
+    width: 60px; /* Ajusta el tamaño de los indicadores */
+    height: 40px; /* Ajusta el tamaño de los indicadores */
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Para mantener el contenido dentro */
+}
+
+.carousel-indicators img {
+    width: 100%; /* Se ajusta al tamaño del indicador */
+    height: 100%; /* Se ajusta al tamaño del indicador */
+    object-fit: cover; /* Asegura que la imagen cubra el área del indicador */
+    border: 2px solid transparent; /* Borde inicial transparente */
+    transition: border-color 0.3s ease; /* Transición suave para el borde */
+}
+
+.carousel-indicators li.active img {
+    border: 2px solid blue; /* Borde azul para la imagen activa */
+}
+
+/* Efecto de sombra en las imágenes del carrusel */
+.carousel-item {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra suave */
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+}
+
+.carousel-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el mouse */
 }

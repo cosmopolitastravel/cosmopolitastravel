@@ -232,6 +232,17 @@ p {
     border: 2px solid blue; /* Borde azul para la imagen activa */
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Cambia el color de fondo */
+    border-radius: 50%; /* Para hacer un círculo */
+    width: 50px; /* Ajusta el tamaño del círculo */
+    height: 50px; /* Ajusta el tamaño del círculo */
+    background-size: 20px; /* Tamaño del icono de la flecha */
+    background-position: center; /* Centrar el icono de la flecha */
+    background-repeat: no-repeat; /* Evitar que el icono de la flecha se repita */
+}
+
 /* Efecto de sombra en las imágenes del carrusel */
 .carousel-item {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra suave */

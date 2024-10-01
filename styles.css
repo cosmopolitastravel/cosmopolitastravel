@@ -274,3 +274,32 @@ p {
         .content-section {
             margin-right: 250px; /* Espacio para el índice */
         }
+
+/* Estilos adicionales para el banner */
+.banneratenas {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 400px; /* Ajusta la altura según necesites */
+    background-image: url('fotos/atenas.webp'); /* Cambia esto por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+}  
+.bannergatenas h1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em; /* Tamaño del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.banneratenas p{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+}
+@media (max-width: 576px) {
+    .banneratenas h1 {
+        font-size: 1.5em;
+        }
+    }

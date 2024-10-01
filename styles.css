@@ -141,6 +141,16 @@ p {
 
 /* menú */  
 
+.indice{
+    pointer-events: auto;
+}
+
+ @media (max-width: 767.98px) { /* Dispositivos móviles */
+        .aside {
+            display: none; /* Oculta el índice en pantallas más pequeñas */
+        }
+    }
+
 /* Añade el CSS para el efecto hover en los enlaces del menú */
 .nav-link {
     text-decoration: none;

@@ -280,7 +280,7 @@ p {
     position: relative;
     text-align: center;
     color: white;
-    height: 400px; /* Ajusta la altura según necesites */
+    height: 300px; /* Ajusta la altura según necesites */
     background-image: url('fotos/atenas.webp'); /* Cambia esto por la ruta de tu imagen */
     background-size: cover;
     background-position: center;

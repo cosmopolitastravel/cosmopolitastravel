@@ -1,14 +1,5 @@
-:root {
-    --dark-blue: #1b263b;
-    --medium-blue: #3b5998;
-    --light-blue: #8ab6d6;
-    --lighter-blue: #d4e6f1;
-    --transparent: #000;
-}
-
 body {
     background-color: whitesmoke;
-    padding: 0px;
 }
 
 footer {
@@ -19,21 +10,26 @@ footer {
 
 
 nav {
-    font-family: "Quicksand";
-    background-color: rgba(0, 0, 255, 0.9);
-    transition: background-color 0.3s ease-in-out;
+    background-color: rgba(0, 0, 255, 1);
+    transition: background-color 1.0s ease-in-out;
+    z-index: 10; /* Para que esté por encima */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra debajo del menú */
+    height: 100px;
 }
 
 .scrolled {
   background-color: white !important;
 }
+.scrolled .navbar-nav .nav-link a{
+    color: black;
+}
 
 .navbar-brand {
-    font-family: "Unna";
+    font-family: font-family: Arial, sans-serif;;
 }
 
 header {
-    padding-bottom: 35px;
+    padding-bottom: 70px;
 }
 
 titulo {
@@ -49,16 +45,17 @@ h2 {
 }
 
 p {
-    line-height: 1.6;
+    text-align: left; /* Alinear el texto a la izquierda */
+    margin: 0; /* Opcional: Elimina el margen por defecto */
+    padding: 0; /* Opcional: Elimina el padding por defecto */
+    line-height: 2; /* Ajusta el interlineado según tu preferencia */
 }
 
-.row {
-    padding-top: 5px;
-    font-family: "Convergence";
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-    display: flex;
+#navbarNav a {
+    font-family: Arial, Tahoma, sans-serif; /* Fuente del sistema */
+    font-size: 18px; /* Tamaño de letra */
+    font-weight: bold; /* Negrita */
+    color: white;
 }
 
 .card {
@@ -159,7 +156,7 @@ p {
 /* Añade el CSS para el efecto hover en los enlaces del menú */
 .nav-link {
     text-decoration: none;
-    color: white;
+    color: black;
     position: relative;
 }
 

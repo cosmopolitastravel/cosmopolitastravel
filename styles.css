@@ -19,8 +19,13 @@ footer {
 
 
 nav {
-    background-color: #0ab6f7;
     font-family: "Quicksand";
+    background-color: rgba(0, 0, 255, 0.9);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.scrolled {
+  background-color: white !important;
 }
 
 .navbar-brand {
@@ -44,7 +49,7 @@ h2 {
 }
 
 p {
-    text-align: justify;
+    text-align:;
 }
 
 .row {
